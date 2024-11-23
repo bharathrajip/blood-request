@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="english">
+<head>
+    
+    <title>Blood Request</title>
+    <link rel="stylesheet" href="blood.css">
+</head>
+<body>
+    <div class="container">
+                 <div class="sidebar">
+               <h2>Requests</h2>
+               <ul>
+                <li>Blood Request</li>
+                <li>Need a Job</li>
+
+                <li>Job Offers</l<li>Help Request</li>
+                <li>Help Offers/Donors</li>
+                <li>My Requests</li>
+            </ul>
+        </div>
+        <div class="content">
+            <center>
+            <h1>Blood Request</h1>
+        </center>
+            <form>
+                <label for="title">Title to show request page for Request</label>
+                <input type="text" id="title" name="title" placeholder="Enter Title">
+
+                <label for="patientName">Patient Name</label>
+                <input type="text" id="patientName" name="patientName" placeholder="Enter Patient Name">
+
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" placeholder="Enter Age">
+
+                <label>Type of Blood Donation</label>
+                <div class="radio-group">
+                    <input type="radio" id="blood" name="donationType" value="Blood" checked>
+                    <label for="blood">Blood</label>
+                    
+                    <input type="radio" id="plasma" name="donationType" value="Plasma">
+                    <label for="plasma">Plasma</label>
+                    
+                    <input type="radio" id="platelets" name="donationType" value="Platelets">
+                    <label for="platelets">Single Donor Platelet (SDP)</label>
+                    
+                    <input type="radio" id="wbc" name="donationType" value="WBC">
+                    <label for="wbc">White Blood Cell (WBC)</label>
+                </div>
+
+                <label for="bloodGroup">Blood Group</label>
+                <select id="bloodGroup" name="bloodGroup">
+                    <option value="">Select Blood Group</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    
+                </select>
+
+        <label for="units">No. of Units Needed</label>
+     <input type="number" id="units" name="units" placeholder="Enter No. of Units">
+
+        <label for="location">Location, City</label>
+            <input type="text" id="location" name="location" placeholder="Enter Location">
+
+         <button type="submit">Submit</button>
+     </form>
+        </div></div>
+</body>
+</html>
